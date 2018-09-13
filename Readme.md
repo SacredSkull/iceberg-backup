@@ -4,15 +4,17 @@
 
 *Freeze those assets!*
 
-Iceberg is a service that provides backup services to the *cooler* types of cloud storage. These being,, but not necessarily limited to, the low-cost, low[er] availablity storage solutions), such as **AWS Glacier**, **GCP Near/ColdLine** or **Azure Cold Storage**.
+Iceberg is a service that provides backup services to the *cooler* types of cloud storage. Such examples of the low-cost, low[er] availablity storage solutions are **AWS Glacier**, **GCP Near/ColdLine** or **Azure Cool/Archive Storage**.
 
 ---
 
 ## Why would I use cold storage?
 Backing up is generally a painfully boring task that often relies on equally painfully expensive solutions. All of the big cloud providers offer *cold storage* services which presents a cheap, effective answer to this problem.
 
+How cheap? We're talking raw rates of under a dollar cent (or if you're like me and you don't answer to the dollar, a penny) per gigabyte. Now these are *raw* values - there are other under-the-hood prices you need to be aware of. Which is where the handy next section comes in!
+
 ## Which provider (or provider service)?
-Ah, now that's a good question!
+Ah, now that's a good question! But it doesn't have an especially clear decision...
 
 |  **Service**          	| **Raw Price/GB** 	| **Retrieval Price/GB**                                    	| **Other costs**                                                                                             	|  **Notes**                                                                                                                                                                                                                                                     	|
 |-----------------------	|------------------	|-----------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -22,7 +24,7 @@ Ah, now that's a good question!
 | Azure Archive Storage 	|  `$0.002`          	| `$0.022 + ($5.50 per 10,000 files)`                         	| Ingress: `free`, List requests `$0.05 per 10,000`, Write requests `$0.11 per 10,000`, Egress: `$0.087/GB`           	|                                                                                                                                                                                                                                                                	|
 | Azure Cool Storage    	| `$0.01`            	| `$0.01 + ($0.01 per 10,000 files)`                          	| Ingress: `free`, Read requests `$0.05 per 10,000`, Write requests `$0.10 per 10,000`, Egress: `$0.087/GB`           	|                                                                                                                                                                                                                                                                	|
 
-A worked example comparing these will become available, as well as potentially a calculator showing you which of these is the best choice for you. It looks like if you're willing to wait around for AWS to pump out your data, it is the best bet. Azure Archive was looking great until the $5 retrieval cost showed up.Presumably, Azure Cool will actually turn out to be the more appropriate of the two.
+A worked example comparing these will become available, as well as potentially a calculator showing which suits you the best.
 
 ## The Project
 Uh, what project? This isn't even close to functional yet!
