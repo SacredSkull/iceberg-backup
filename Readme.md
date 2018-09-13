@@ -1,4 +1,5 @@
-![Iceberg.](https://magic.sacredskull.net/iceberg.zsvg)
+![Iceberg.](https://magic.sacredskull.net/Icecube.svg)
+
 [![Build Status](https://dev.azure.com/iceberg-backup/Icecube/_apis/build/status/develop-build)](https://dev.azure.com/iceberg-backup/Icecube/_build/latest?definitionId=2)
 
 *Freeze those assets!*
